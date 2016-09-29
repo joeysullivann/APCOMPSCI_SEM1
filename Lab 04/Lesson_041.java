@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Lesson_041
 {
 	public static void main(String[]args)
