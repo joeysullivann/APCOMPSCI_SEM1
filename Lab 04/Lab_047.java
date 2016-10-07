@@ -7,9 +7,9 @@ public class Lab_047
 	public static void main(String[]args)
 	
 	{
-		Scanner sf = new Scanner(System.in);
+		Scanner js = new Scanner(System.in);
 		System.out.println("What is the length of the radius? ");
-		r = sf.nextDouble();
+		r = js.nextDouble();
 		
 		area = 3.14*(r*r);
 		System.out.println("The area of a cirle with a radius of" + r + "is " + area);

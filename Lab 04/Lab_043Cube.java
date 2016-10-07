@@ -6,10 +6,10 @@ public class Lab_043Cube
 	
 		public static void main(String[]args)
 		{
-			Scanner inputs = new Scanner(System.in);
+			Scanner js = new Scanner(System.in);
 	
 			System.out.println("What is your length of a side?");
-			s = inputs.nextDouble();
+			s = js.nextDouble();
 			
 			print(calcSA(s));
 		}

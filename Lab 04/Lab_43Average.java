@@ -8,14 +8,14 @@ public class Lab_43Average
 	
 		public static void main(String[]args)
 		{
-			Scanner inputs = new Scanner(System.in);
+			Scanner js = new Scanner(System.in);
 	
 			System.out.println("What is your first number?");
-			num1 = inputs.nextDouble();
+			num1 = js.nextDouble();
 			System.out.println("What is your second number?");
-			num2 = inputs.nextDouble();
+			num2 = js.nextDouble();
 			System.out.println("What is your third number?");
-			num3 = inputs.nextDouble();
+			num3 = js.nextDouble();
 			
 			print(calcAverage(num1, num2, num3));
 		}

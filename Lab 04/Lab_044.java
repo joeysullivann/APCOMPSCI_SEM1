@@ -7,11 +7,11 @@ public class Lab_044
 	
 	public static void main(String[]args)
 	{
-		Scanner rec = new Scanner(System.in);
+		Scanner js = new Scanner(System.in);
 		System.out.println("What is your length? ");
-		l = rec.nextInt();
+		l = js.nextInt();
 		System.out.println("What is your width? ");
-		w = rec.nextInt();
+		w = js.nextInt();
 		calcP();
 		print();
 

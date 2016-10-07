@@ -7,12 +7,12 @@ public class Lab_043Rectangle
 	
 		public static void main(String[]args)
 		{
-			Scanner inputs = new Scanner(System.in);
+			Scanner js = new Scanner(System.in);
 	
 			System.out.println("What is he length of your rectangle?:");
-			l = inputs.nextDouble();
+			l = js.nextDouble();
 			System.out.println("What is the width of your rectangle?:");
-			w = inputs.nextDouble();
+			w = js.nextDouble();
 			
 			print(calcPerim(l, w));
 		}

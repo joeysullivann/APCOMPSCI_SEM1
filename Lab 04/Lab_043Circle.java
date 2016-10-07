@@ -6,10 +6,10 @@ public class Lab_043Circle
 	
 		public static void main(String[]args)
 		{
-			Scanner inputs = new Scanner(System.in);
+			Scanner js = new Scanner(System.in);
 	
 			System.out.println("What is the radius of your circle?");
-			r = inputs.nextDouble();
+			r = js.nextDouble();
 			
 			print(calcArea(r));
 		}

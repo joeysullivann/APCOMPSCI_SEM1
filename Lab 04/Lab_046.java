@@ -6,9 +6,9 @@ public class Lab_046
 	
 	public static void main(String[]args)
 	{
-		Scanner area = new Scanner(System.in);
+		Scanner js = new Scanner(System.in);
 		System.out.println(" What is your side length? ");
-		si = area.nextInt();
+		si = js.nextInt();
 		
 		cA();
 		print();

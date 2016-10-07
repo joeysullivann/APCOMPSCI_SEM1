@@ -9,15 +9,15 @@ public class Lab_045
 	public static void main(String[]arg)
 	
 	{
-		Scanner ave = new Scanner (Sys1tem.in);
+		Scanner js = new Scanner (System.in);
 		System.out.println("What is your first number? ");
-		b = ave.nextInt();
+		b = js.nextInt();
 		
 		System.out.println(" What is your second number? ");
-		c = ave.nextInt();
+		c = js.nextInt();
 		
 		System.out.println("What is your last number? ");
-		d = ave.nextInt();
+		d = js.nextInt();
 		calcAvg();
 		print();
 	}

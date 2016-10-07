@@ -3,7 +3,7 @@ public class Lab_043
 {
 	public static void main(String[]args)
 	{
-		Scanner input = new Scanner(System.in);
+		Scanner js = new Scanner(System.in);
 			Lab_043 boom = new Lab_043();
 		
 		double h = 0;
@@ -12,13 +12,13 @@ public class Lab_043
 		double v = 0;
 		
 		System.out.print("What is your height? ");
-		h = input.nextDouble();
+		h = js.nextDouble();
 		
 		System.out.print("What is your length? ");
-		l = input.nextDouble();
+		l = js.nextDouble();
 		
 		System.out.print("What is your width? ");
-		w = input.nextDouble();
+		w = js.nextDouble();
 		
 		v = h * l * w;
 			double v1 = boom.v1(v);
