@@ -4,25 +4,25 @@ public class Lab_05E2
 {
 	public static void main(String[]args)
 	{
-		Scanner input = new Scanner(System.in);
+		Scanner js = new Scanner(System.in);
 		Lab_05E2 receipt = new Lab_05E2();
 		
 		System.out.println("What is your first item?");
-		String i1 = input.nextLine();
+		String i1 = js.nextLine();
 		System.out.println("What is the price of your first item? ");
-		double p1 = input.nextDouble();
+		double p1 = js.nextDouble();
 		
-		input.nextLine();
+		js.nextLine();
 		System.out.println("What is your second item? ");
-		String i2 = input.nextLine();
+		String i2 = js.nextLine();
 		System.out.println("What is the price of your first item? ");
-		double p2 = input.nextDouble();
+		double p2 = js.nextDouble();
 		
-		input.nextLine();
+		js.nextLine();
 		System.out.println("What is your third item? ");
-		String i3 = input.nextLine();
+		String i3 = js.nextLine();
 		System.out.println("What is the price of our third item? ");
-		double p3 = input.nextDouble();
+		double p3 = js.nextDouble();
 		
 		double subTotal = p1+p2+p3;
 		double discounted = subTotal - (discount(subTotal));
