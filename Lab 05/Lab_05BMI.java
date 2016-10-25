@@ -41,7 +41,7 @@ public class Lab_05BMI
 		
 		else if(bmi >= 18.5)
 		{
-			fitness = "Normal";
+			fitness = "Normal weight";
 		}
 		
 		else
