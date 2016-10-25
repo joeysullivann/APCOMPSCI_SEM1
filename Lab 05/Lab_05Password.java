@@ -23,19 +23,19 @@ public class Lab_05Password
 		
 		if (!(inputUsername.equals(staticUsername)) && (inputPassword.equals(staticPassword)))
 		{
-			System.out.println("Your username is incorrect.");
+			System.out.println("Your username is incorrect!");
 			passCheck();
 		}
 		
 		if ((inputUsername.equals(staticUsername)) && !(inputPassword.equals(staticPassword)))
 		{
-			System.out.println("Your password is incorrect.");
+			System.out.println("Your password is incorrect!");
 			passCheck();
 		}
 		
 		if (!(inputUsername.equals(staticUsername)) && !(inputPassword.equals(staticPassword)))
 		{
-			System.out.println("Your username and password are incorrect");
+			System.out.println("Your username and password are incorrect!");
 			passCheck();
 		}
 	}
