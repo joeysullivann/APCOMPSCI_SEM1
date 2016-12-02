@@ -8,7 +8,6 @@ public class Lab_07AverageDigits{
 		System.out.println("Enter in your number: ");
 		number = js.nextInt();
 		num = number;
-	
 		System.out.println("The average of the digits in " + number + " is " + avDigits());
 		
 	}
