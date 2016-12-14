@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class Lab_09ReverseWord{
 	static String newWord = "";
-
 	public static void main(String[]args){
 		String [] word = new String[5];
 		Scanner js = new Scanner(System.in);
