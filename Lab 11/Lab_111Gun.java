@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Lab_111Gun{
 	static int bulletamount = 96;
 	static int clip = 16;
-	static int shots = 16;
+	static int shots = 0;
 	static String [] clips = new String [16];
 	public static void main(String[]args){
 		Scanner js = new Scanner(System.in);
@@ -19,6 +19,7 @@ public class Lab_111Gun{
 			}
 			printClip();
 		}
+		System.out.println("Out of Bullets!!!");
 	}
 	public static void resetclip(){
 		for (int j = 0; j < clips.length; j++){
