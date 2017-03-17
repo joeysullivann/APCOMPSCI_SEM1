@@ -30,7 +30,6 @@ public class Lab_141Satellite
 		double x, y;
         for (Location2 l : locate)
        {
-		   //double x, y;
 		   x = Math.round(((Math.random()*100) + 1) * 100.0)/ 100.0;
 		   y = Math.round(((Math.random()*100) + 1) * 100.0)/ 100.0;
            printout += "\nAfter " + l.getID() + " Moved: (" + x + ", " + y + ")";
@@ -47,8 +46,6 @@ public class Lab_141Satellite
         System.out.println(printout);
    }
    
-   
-
     public static double getDistance(double[] car, double[] home)
    {
        return Math.sqrt((Math.pow(car[0] - home[0], 2)+ Math.pow(car[1] - home[1], 2)));
