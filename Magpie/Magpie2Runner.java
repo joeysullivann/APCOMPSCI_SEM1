@@ -16,3 +16,6 @@ public class Magpie2Runner
 		}
 	}
 }
+
+{ System.out.println ("hi");
+}
