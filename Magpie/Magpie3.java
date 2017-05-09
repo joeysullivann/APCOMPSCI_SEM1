@@ -83,7 +83,6 @@ public class Magpie3
 		int psnOfMe = findKeyword(statement, "me", psnOfYou + 3);
 		String restOfStatement = statement.substring(psnOfYou + 3, psnOfMe);
 		return "What makes you think that I" + restOfStatement + "you?"; 
-
 	}
 	private String transformIYouStatement(String statement)
 	{
@@ -131,7 +130,6 @@ public class Magpie3
 	}
 	private int findKeyword(String statement, String goal)
 	{
-
 		String newg = goal.toLowerCase();
 		return findKeyword(statement, newg, 0);
 	}

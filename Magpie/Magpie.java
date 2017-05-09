@@ -61,7 +61,6 @@ public class Magpie
  			{
  				return psn;
  			}
- 			
  			else
  			{
  				return findKeyword(phrase, goal, psn + 1);
@@ -79,7 +78,6 @@ public class Magpie
  		double r = Math.random();
  		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
  		String response = "";
- 		
  		if (whichResponse == 0)
  			response = "Interesting, tell me more.";
  		else if (whichResponse == 1)
@@ -88,7 +86,6 @@ public class Magpie
  			response = "Do you really think so?";
  		else if (whichResponse == 3)
  			response = "You don't say.";
- 
  		return response;
  	}
  }
