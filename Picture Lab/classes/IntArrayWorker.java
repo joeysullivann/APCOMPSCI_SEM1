@@ -1,20 +1,13 @@
 public class IntArrayWorker
 {
-  /** two dimensional matrix */
+
   private int[][] matrix = null;
-  
-  /** set the matrix to the passed one
-    * @param theMatrix the one to use
-    */
+
   public void setMatrix(int[][] theMatrix)
   {
     matrix = theMatrix;
   }
-  
-  /**
-   * Method to return the total 
-   * @return the total of the values in the array
-   */
+
   public int getTotal()
   {
     int total = 0;
@@ -27,11 +20,7 @@ public class IntArrayWorker
     }
     return total;
   }
-  
-  /**
-   * Method to return the total using a nested for-each loop
-   * @return the total of the values in the array
-   */
+
   public int getTotalNested()
   {
     int total = 0;
@@ -44,10 +33,7 @@ public class IntArrayWorker
     }
     return total;
   }
-  
-  /**
-   * Method to fill with an increasing count
-   */
+
   public void fillCount()
   {
     int numCols = matrix[0].length;
@@ -61,10 +47,7 @@ public class IntArrayWorker
       }
     }
   }
-  
-  /**
-   * print the values in the array in rows and columns
-   */
+
   public void print()
   {
     for (int row = 0; row < matrix.length; row++)
@@ -77,11 +60,7 @@ public class IntArrayWorker
     }
     System.out.println();
   }
-  
-  
-  /** 
-   * fill the array with a pattern
-   */
+
   public void fillPattern1()
   {
     for (int row = 0; row < matrix.length; row++)

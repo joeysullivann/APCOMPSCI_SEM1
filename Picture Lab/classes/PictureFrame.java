@@ -31,7 +31,7 @@ public class PictureFrame
    */
   public PictureFrame()
   {
-    // set up the frame
+
     initFrame();
   }
   
@@ -42,10 +42,9 @@ public class PictureFrame
    */
   public PictureFrame(DigitalPicture picture)
   {
-    // set the current object's picture to the passed in picture
+
     this.picture = picture;
-    
-    // set up the frame
+
     initFrame();
   }
   
@@ -69,13 +68,12 @@ public class PictureFrame
    */
   public void updateImage()
   {
-    // only do this if there is a picture
+
     if (picture != null)
     {
-      // set the image for the image icon from the picture
+
       imageIcon.setImage(picture.getImage());
-      
-      // set the title of the frame to the title of the picture
+
       frame.setTitle(picture.getTitle());
       
     }
@@ -87,10 +85,9 @@ public class PictureFrame
    */
   public void updateImageAndShowIt()
   {
-    // first update the image
+
     updateImage();
-    
-    // now make sure it is shown
+
     frame.setVisible(true);
   }
   
@@ -142,14 +139,9 @@ public class PictureFrame
    */
   public void repaint()
   {
-    
-    // make it visible
+
     frame.setVisible(true);
-    
-    // update the image from the picture
     updateImage();
-    
-    // tell the JFrame to handle the repaint
     frame.repaint();
   }
   
@@ -158,17 +150,9 @@ public class PictureFrame
    */
   private void initFrame()
   {
-    
-    // set the image for the picture frame
     updateImage();
-      
-    // add the label to the frame
     frame.getContentPane().add(label);
-    
-    // pack the frame (set the size to as big as it needs to be)
     frame.pack();
-    
-    // make the frame visible
     frame.setVisible(true);
   }
   

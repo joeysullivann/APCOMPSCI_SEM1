@@ -192,20 +192,13 @@ public class Pixel
    */
   public Color getColor() 
   { 
-     /* get the value at the location from the picture as a 32 bit int
-     * with alpha, red, green, blue each taking 8 bits from left to right
-     */
+
     int value = picture.getBasicPixel(x,y);
 
-    // get the red value (starts at 17 so shift right 16)
-    // then AND it with all 1's for the first 8 bits to 
-    // end up with a resulting value from 0 to 255 
     int red = (value >> 16) & 0xff;
-    
-    // get the green value (starts at 9 so shift right 8)
+
     int green = (value >>  8) & 0xff;
-    
-    // get the blue value (starts at 0 so no shift required)
+
     int blue = value & 0xff;
     
     return new Color(red,green,blue);
@@ -217,12 +210,11 @@ public class Pixel
    */
   public void setColor(Color newColor) 
   {
-    // set the red, green, and blue values
+
     int red = newColor.getRed();
     int green = newColor.getGreen();
     int blue = newColor.getBlue();
-    
-    // update the associated picture
+
     updatePicture(this.getAlpha(),red,green,blue);
   }
   
@@ -236,10 +228,9 @@ public class Pixel
    */
   public void updatePicture(int alpha, int red, int green, int blue)
   {
-    // create a 32 bit int with alpha, red, green blue from left to right
+
     int value = (alpha << 24) + (red << 16) + (green << 8) + blue;
     
-    // update the picture with the int value
     picture.setBasicPixel(x,y,value);
   }
   
@@ -263,23 +254,17 @@ public class Pixel
    */
   public void setRed(int value)
   {
-    // set the red value to the corrected value
+ 
     int red = correctValue(value);
-    
-    // update the pixel value in the picture
+
     updatePicture(getAlpha(), red, getGreen(), getBlue());
   } 
-  
-  /**
-   * Method to set the green to a new green value
-   * @param value the value to use
-   */
+
   public void setGreen(int value)
   {
-    // set the green value to the corrected value
+
     int green = correctValue(value);
-    
-    // update the pixel value in the picture
+
     updatePicture(getAlpha(), getRed(), green, getBlue());
   } 
   
@@ -289,10 +274,9 @@ public class Pixel
    */
   public void setBlue(int value)
   {
-    // set the blue value to the corrected value
+
     int blue = correctValue(value);
-    
-    // update the pixel value in the picture
+
     updatePicture(getAlpha(), getRed(), getGreen(), blue);
   } 
   
@@ -302,10 +286,9 @@ public class Pixel
    */
   public void setAlpha(int value)
   {
-    // make sure that the alpha is from 0 to 255 
+ 
     int alpha = correctValue(value);
-    
-    // update the associated picture
+
     updatePicture(alpha, getRed(), getGreen(), getBlue());
   } 
   
